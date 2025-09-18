@@ -120,12 +120,6 @@ def correction(motor, power, targetAngle, kp):
     gradiNow = hub.imu.heading()
     error = targetAngle - gradiNow
 
-    # if abs(error) < IMU_ERROR:
-    #     p = 0
-    # elif error > 0:
-    #     p = kp * (error - IMU_ERROR)
-    # else:
-    #     p = kp * (error + IMU_ERROR)
     p = kp * error
 
     correctedPower = 0
