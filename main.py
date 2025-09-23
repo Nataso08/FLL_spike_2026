@@ -3,15 +3,14 @@
 # importazione uscite come funzioni da file
 from M1 import M1
 from M2 import M2
-from M3 import M3
-from M3_Barca import M3_Barca
-from M4 import M4
-from M5 import M5
-from M6 import M6
+# from M3 import M3
+# from M4 import M4
+# from M5 import M5
+# from M6 import M6
 from func import *
 
 # array of the mission
-missions = [M1, M2, M3, M3_Barca, M4, M5, M6]
+missions = [M1, M2]
 
 # logo planck
 logo = [
@@ -42,12 +41,8 @@ try:
     while not exit:
         if (mission == len(missions)):
             break
-        elif (mission == 3):
-            hub.display.char("B")
-        elif (mission < 3):
-            hub.display.char(str(mission+1))
         else:
-            hub.display.char(str(mission))
+            hub.display.char(str(mission+1))
 
         if run:
             try:
@@ -63,7 +58,7 @@ try:
                 continue
             
             if mission < len(missions)-1:
-                mission+=1 if (mission != 2) else 2
+                mission+=1
             else:
                 exit = True
             run = False
