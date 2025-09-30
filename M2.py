@@ -9,10 +9,10 @@ def M2 ():
     calibImu(2)
     resetImu()
 
-    moveToDistance(77, 40, 0, 2.5)
+    moveToDistance(76, 40, 0, 2.5)
     turnToAngle(0, 25, -90, 2.5)
     moveToDistance(10, 40, -90, 2.5, False)
-    moveToDistance(10, 80, -95, 2.5)
+    moveToDistance(10, 80, -100, 2.5)
 
     # turnToAngle(25, 0, -80, 2.5)
     # moveToDistance(5, 80, -90, 2.5)
