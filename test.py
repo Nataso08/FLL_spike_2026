@@ -12,3 +12,4 @@ print("Batteria: ", hub.battery.voltage() / 1000, " V")      # comando per otten
 # togliendo il nome della missione dal commento e verificare corretta identazione (no spazio a sx)
 
 # motorTopL.run_target(1000, -300)
+
