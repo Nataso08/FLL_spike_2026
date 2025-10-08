@@ -8,15 +8,15 @@ def M2 ():
 
     calibImu(1)
     resetImu()
-    motorTopL.reset_angle()
+    motorTopL.reset_angle() 
 
     motorTopL.run_target(1000, 300, Stop.BRAKE, False)
 
-    moveToDistance(72, 50, 0, 2.5, False)
+    moveToDistance(71, 50, 0, 2.5, False)
     moveToDistance(4, 35, 0, 2.5)
-    turnToAngle(0, 25, -90, 2.5)
-    moveToDistance(13, 40, -90, 2.5, False)
-    moveToDistance(10, 80, -110, 2.5)
+    turnToAngle(0, 30, -90, 2.5)
+    moveToDistance(8, 40, -90, 2.5, False)
+    moveToDistance(15, 80, -110, 2.5)
 
     motorTopR.run_angle(1000, -1000)
 
@@ -24,8 +24,8 @@ def M2 ():
 
     moveToDistance(8, 50, -90, 2.5)
 
-    motorTopL.run_target(1000, -50)
-    motorTopL.run(-300)
+    motorTopL.run_target(1000, -150)
+    motorTopL.run(-100)
     moveToDistance(2, 35, -90, 2.5)
     motorTopL.brake()
     turnToAngle(35, 0, 0, 2.5)
@@ -36,4 +36,5 @@ def M2 ():
 
     print(float(stopwatch.time())/1000, " secondi")
 
-M2 ()
+
+# 16 s

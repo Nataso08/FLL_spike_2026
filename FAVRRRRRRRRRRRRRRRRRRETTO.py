@@ -5,29 +5,29 @@ def FAVRRRETTO ():
     stopwatch = StopWatch()
     clockTime = 1000
 
+    print(hub.battery.voltage(), " mV")
+
     motorTopL.reset_angle()
     resetImu()
 
-
-
     moveToDistance(68, 70, 0, 2.5)
-    moveToDistance(19, -50, 0, 2.5)
+    moveToDistance(19, -70, 0, 2.5)
     moveToDistance(9, 40, 0, 2.5)
 
-    motorTopL.run_angle(1000, -600)
+    motorTopL.run_angle(1000, -1000)
     wait(200)
-    motorTopL.run_angle(1000, 600)
+    motorTopL.run_angle(1000, 1000)
 
-    turnToAngle(20, 0, 30, 2.5)
-    moveToDistance(17, 40, 30, 2.5)
+    turnToAngle(20, 0, 35, 2.5)
+    moveToDistance(15, 40, 35, 2.5)
 
     turnToAngle(0, 20, -45, 2.5)
 
-    motorTopR.run_angle(1000, 200)
+    motorTopR.run_angle(1000, 250)
 
     moveToDistance(10, 40, -45, 2.5)
 
-    motorTopR.run_angle(1000, -200)
+    motorTopR.run_angle(1000, -250)
 
     moveToDistance(20, -50, -45, 2.5)
 

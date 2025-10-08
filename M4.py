@@ -21,5 +21,3 @@ def M4 ():
 
 
     print(float(stopwatch.time())/1000, " secondi")
-
-M4 ()

@@ -3,14 +3,14 @@
 # importazione uscite come funzioni da file
 from M1 import M1
 from M2 import M2
-# from M3 import M3
-# from M4 import M4
+from M3 import M3
+from M4 import M4
 # from M5 import M5
 # from M6 import M6
 from func import *
 
 # array of the mission
-missions = [M1, M2]
+missions = [M1, M2, M3, M4]
 
 # logo planck
 logo = [

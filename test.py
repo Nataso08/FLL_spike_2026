@@ -13,3 +13,6 @@ print("Batteria: ", hub.battery.voltage() / 1000, " V")      # comando per otten
 
 # motorTopL.run_target(1000, -300)
 
+moveToDistance(15, 70, 0, 2.5)
+wait (200)
+moveToDistance(15, -50, 0, 2.5)
