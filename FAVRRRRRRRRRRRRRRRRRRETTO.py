@@ -10,6 +10,8 @@ def FAVRRRETTO ():
     motorTopL.reset_angle()
     resetImu()
 
+    motorTopR.run_target(1000, 1000, Stop.HOLD, False)
+
     moveToDistance(68, 70, 0, 2.5)
     moveToDistance(19, -70, 0, 2.5)
     moveToDistance(9, 40, 0, 2.5)
@@ -19,21 +21,19 @@ def FAVRRRETTO ():
     motorTopL.run_angle(1000, 1000)
 
     turnToAngle(20, 0, 35, 2.5)
-    moveToDistance(15, 40, 35, 2.5)
+    moveToDistance(11, 40, 35, 2.5)
 
     turnToAngle(0, 20, -45, 2.5)
 
-    motorTopR.run_angle(1000, 250)
+    motorTopR.run_target(1000, 200)
 
     moveToDistance(10, 40, -45, 2.5)
 
-    motorTopR.run_angle(1000, -250)
+    motorTopR.run_target(1000, 1200)
 
-    moveToDistance(20, -50, -45, 2.5)
-
+    moveToDistance(10, -50, -45, 2.5)
     turnToAngle(0, -30, 20, 2.5)
-
-    moveToDistance(80, -80, 20, 2.5)
+    moveToDistance(80, -70, 20, 2.5)
 
     print(float(stopwatch.time())/1000, " secondi")
 
