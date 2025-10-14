@@ -12,7 +12,7 @@ def M2 ():
 
     motorTopL.run_target(1000, 300, Stop.BRAKE, False)
 
-    moveToDistance(71, 50, 0, 2.5, False)
+    moveToDistance(73, 50, 0, 2.5, False)
     moveToDistance(4, 35, 0, 2.5)
     turnToAngle(0, 30, -90, 2.5)
     moveToDistance(8, 40, -90, 2.5, False)
@@ -36,5 +36,5 @@ def M2 ():
 
     print(float(stopwatch.time())/1000, " secondi")
 
-
+M2 ()
 # 16 s
