@@ -8,16 +8,16 @@ def M5 ():
     calibImu(2)
 
     motorTopL.reset_angle() 
-    motorTopL.run_angle(1000, 300, Stop.BRAKE, False) #alzo il braccio
+    motorTopL.run_angle(200, 300, Stop.BRAKE, False) #alzo il braccio
 
-    moveToDistance(80, 60, 0, 2.5, False) 
-    moveToDistance(7, 35, 0, 2.5) 
+    moveToDistance(73, 60, 0, 2.5, False) 
+    moveToDistance(12, 35, 0, 2.5) 
     turnToAngle(19, 0, 60, 2.5)
     moveToDistance(10, 40, 65, 2.5) 
     turnToAngle(0, -19, 87, 2.5) #allineato con miniera
 
 
-    motorTopL.run_target(1000, -150, Stop.BRAKE, True) #abbasso braccio
+    #motorTopL.run_target(1000, -150, Stop.BRAKE, True) #abbasso braccio
     moveToDistance(5, 40, 90, 2.5)
     moveToDistance(15, 55, 90, 2.5)
 

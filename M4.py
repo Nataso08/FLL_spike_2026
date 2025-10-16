@@ -11,7 +11,7 @@ def M4 ():
 
     moveToDistance(30, 60, 0, 2.5, False)
     moveToDistance(9, 40, 0, 2.5)
-    moveToDistance(5, -40, 0, 2.5)
+    moveToDistance(6, -50, 0, 2.5)
     moveTime(1000, 90, 5, 2.5)
     # moveToDistance(200, -40, 5, 2.5)
     # moveToDistance(200, 40, 5, 2.5)

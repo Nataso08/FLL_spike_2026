@@ -10,13 +10,13 @@ def M3 ():
     motorTopL.reset_angle()
     resetImu()
 
-    motorTopR.run_target(1000, 1100, Stop.HOLD, False)
+    motorTopR.run_target(1000, 1100, Stop.HOLD, False) #partenza
 
-    moveToDistance(68, 70, 0, 2.5)
+    moveToDistance(68, 70, 0, 2.5) #arrivo in missione
     moveToDistance(19, -70, 0, 2.5)
     moveToDistance(9, 40, 0, 2.5)
 
-    motorTopL.run_angle(1000, -1000)
+    motorTopL.run_angle(1100, -1000) #abbocca il "tridente"
     wait(200)
     motorTopL.run_angle(1000, 1000)
 
@@ -24,7 +24,8 @@ def M3 ():
 
     moveToDistance(11, 40, 35, 2.5)
     turnToAngle(0, 20, -45, 2.5)
-    motorTopR.run_target(1000, 300)
+
+    motorTopR.run_target(1000, 330) #svolge missione "parco degli spacciatori"
     moveToDistance(10, 40, -45, 2.5)
     motorTopR.run_target(1000, 1200)
     

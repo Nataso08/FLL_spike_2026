@@ -26,7 +26,7 @@ def M2 ():
 
     moveToDistance(8, 50, -90, 2.5)
 
-    waitPress()
+
 
     motorTopL.run_target(1000, -150)
     motorTopL.run(-100)
@@ -41,4 +41,4 @@ def M2 ():
     print(float(stopwatch.time())/1000, " secondi")
 
 M2 ()
-# 16 s
+# 19 s
