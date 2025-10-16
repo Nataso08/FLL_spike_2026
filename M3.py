@@ -1,6 +1,6 @@
 from  func import *
 
-def FAVRRRETTO ():
+def M3 ():
 
     stopwatch = StopWatch()
     clockTime = 1000
