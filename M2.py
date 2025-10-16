@@ -12,17 +12,21 @@ def M2 ():
 
     motorTopL.run_target(1000, 300, Stop.BRAKE, False)
 
-    moveToDistance(73, 50, 0, 2.5, False)
-    moveToDistance(4, 35, 0, 2.5)
+    moveToDistance(90, 60, 0, 2.5)
+
+    moveToDistance(9, -40, 0, 2.5)
+
     turnToAngle(0, 30, -90, 2.5)
-    moveToDistance(8, 40, -90, 2.5, False)
-    moveToDistance(15, 80, -110, 2.5)
+    moveToDistance(12, 40, -100, 2.5, False)
+    moveToDistance(9, 80, -115, 2.5)
 
     motorTopR.run_angle(1000, -1000)
 
     moveToDistance(41, -60, -90, 2.5)
 
     moveToDistance(8, 50, -90, 2.5)
+
+    waitPress()
 
     motorTopL.run_target(1000, -150)
     motorTopL.run(-100)
