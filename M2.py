@@ -32,7 +32,7 @@ def M2 ():
     motorTopL.run_target(1000, -120)
     motorTopL.run(-100)
     moveToDistance(2, 35, -90, 2.5)
-    motorTopL.brake();
+    motorTopL.brake()
     turnToAngle(35, 0, 0, 2.5)
     moveToDistance(60, 90, 0, 2.5, False)
     moveToDistance(45, 80, -30, 2.5)

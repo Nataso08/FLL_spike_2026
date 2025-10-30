@@ -15,10 +15,7 @@ def M4 ():
     moveTime(1200, 80, 10, 2.5)
     # moveToDistance(200, -40, 5, 2.5)
     # moveToDistance(200, 40, 5, 2.5)
-    moveToDistance(60, -80, 5, 2.5)
-
-
-
+    moveToDistance(50, -80, 5, 2.5)
 
     print(float(stopwatch.time())/1000, " secondi")
 

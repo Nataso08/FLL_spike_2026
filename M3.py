@@ -22,20 +22,20 @@ def M3 ():
 
     turnToAngle(20, 0, 35, 2.5)
 
-    moveToDistance(11, 40, 35, 2.5)
-    turnToAngle(0, 20, -45, 2.5)
+    moveToDistance(10, 40, 35, 2.5)
+    turnToAngle(0, 15, -45, 2.5)
 
-    motorTopR.run_target(1100, 330) #svolge missione "parco degli spacciatori"
-    moveToDistance(9, 35, -38, 2.5)
+    #waitPress();
+    motorTopR.run_target(1100, 340) #svolge missione "parco degli spacciatori"
+    moveToDistance(9, 35, -40, 2.5)
     motorTopR.run_target(1000, 1200)
     
     moveToDistance(10, -60, -45, 2.5)
-    turnToAngle(0, -23, 29, 2.5)
-    moveToDistance(80, -80, 20, 2.5) 
+    turnToAngle(0, -20, 29, 2.5)
+    moveToDistance(75, -80, 20, 2.5) 
 
     print(float(stopwatch.time())/1000, " secondi")
-
-    
+  
 
 M3 ()
 #tempo = 18sec
