@@ -14,7 +14,7 @@ def M3 ():
 
     moveToDistance(68, 70, 0, 2.5) #arrivo in missione
     moveToDistance(19, -70, 0, 2.5)
-    moveToDistance(9, 40, 0, 2.5)
+    moveToDistance(8, 40, 0, 2.5)
 
     motorTopL.run_angle(1000, -1000) #abbocca il "tridente"
     wait(200)

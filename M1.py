@@ -5,6 +5,8 @@ def M1 ():
 
     stopwatch = StopWatch()
     clockTime = 1000
+
+    #motorTopR.run_angle(1000, 1200, Stop.HOLD, False) 
     
     resetImu()
     # calibImu(2)

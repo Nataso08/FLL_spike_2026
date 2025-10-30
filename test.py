@@ -5,15 +5,10 @@ from func import *
 
 hub = PrimeHub()
 
-print("Batteria: ", hub.battery.voltage() / 1000, " V")      # comando per ottenere tensione della batteria (ottimale sopra 8 V)
-
+#print("Batteria: ", hub.battery.voltage() / 1000, " V")      # comando per ottenere tensione della batteria (ottimale sopra 8 V)
 
 # se si vuole svolgere una precisa missione utilizzare la seguente sintassi,
 # togliendo il nome della missione dal commento e verificare corretta identazione (no spazio a sx)
 
-motorTopL.run_target(1000, 580)
-wait (1000)
-motorTopL.run_target(1000, 150)
-
-waitPress()
-motorTopL.run_target(1000, 0)
+#motorTopR.run_angle(1000, 200)
+motorTopR.run_angle(1000, -7000)
