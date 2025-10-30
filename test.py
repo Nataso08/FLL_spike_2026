@@ -12,5 +12,5 @@ print("Batteria: ", hub.battery.voltage() / 1000, " V")      # comando per otten
 
 motorTopL.run_angle(1000, -100)
 waitPress()
-motorTopL.run_angle(-1000, 2000)
+motorTopL.run_angle(1000, 2000)
 #motorTopR.run_angle(1000, -7000)
