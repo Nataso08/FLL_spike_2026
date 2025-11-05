@@ -10,7 +10,15 @@ print("Batteria: ", hub.battery.voltage() / 1000, " V")      # comando per otten
 # se si vuole svolgere una precisa missione utilizzare la seguente sintassi,
 # togliendo il nome della missione dal commento e verificare corretta identazione (no spazio a sx)
 
-#motorTopL.run_angle(1000, -100)
-#waitPress()
-#motorTopL.run_angle(1000, 2000)
+motorTopL.run_angle(1000, -150)
+wait(100)
+motorTopL.run_angle(1000, 150)
+wait(100)
+motorTopL.run_angle(1000, -150)
+wait(100)
+motorTopL.run_angle(1000, 150)
+wait(100)
+motorTopL.run_angle(1000, -150)
+wait(100)
+motorTopL.run_angle(1000, 150)
 #motorTopR.run_angle(1000, -7000)
