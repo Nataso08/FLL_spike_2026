@@ -6,21 +6,41 @@ def M1 ():
     stopwatch = StopWatch()
     clockTime = 1000
 
-    #motorTopR.run_angle(1000, 1200, Stop.HOLD, False) 
+    #motorTopR.run_angle(600, 1200, Stop.HOLD, False) 
+    
     
     resetImu()
-    # calibImu(2)
+    calibImu(2)
 
     print(hub.battery.voltage())
 
-    moveToDistance(55, 50, 0, 2.5, False)
-    motorTopR.run_target(1000, 400, Stop.HOLD, False)
-    moveToDistance(12, 40, 0, 2.5)
+    moveToDistance(45, 50, 0, 2.5)
+    #motorTopL.run_target(1500, -400) #Colpi energetici,violenti
+    #motorTopL.run_target(1000, 200)
 
-    motorTopR.run_angle(1000, 3000)
+    #motorTopL.run_target(1500, -400)
+    #motorTopL.run_target(1000, 200)
+
+    #motorTopL.run_target(1500, -400)
+    #motorTopL.run_target(1000, 200)
+
+    #motorTopL.run_target(1500, -400)
+    #motorTopL.run_target(1000, 200)
 
 
+    moveToDistance(30, 40, 0, 2.5)
 
+    turnToAngle(0,13,-33,2.5)
+    
+ 
+
+    moveToDistance(-10,10,0,2.5)
+    
+    #motorTopL.run_target(500, -100)
+    #motorTopR.run_angle(700, -700)
+    #motorTopR.run_angle(600, 600)
+
+    print("M1 - Tempo impiegato: ")
     print(float(stopwatch.time())/1000, " secondi")
 
 M1()

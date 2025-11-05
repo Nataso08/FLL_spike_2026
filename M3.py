@@ -1,4 +1,4 @@
-# FAVRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRERRRRRRRRRRRRRRETT
+# FAVRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRERRRRRRRRRRRRRRETTOO
 from  func import *
 
 def M3 ():
@@ -16,8 +16,8 @@ def M3 ():
     moveToDistance(19, -70, 0, 2.5)
     moveToDistance(8, 40, 0, 2.5)
 
-    motorTopL.run_angle(1000, -1000) #abbocca il "tridente"
-    wait(200)
+    motorTopL.run_angle(1000, -1100) #abbocca il "tridente"
+    wait(250)
     motorTopL.run_angle(1000, 1000)
 
     turnToAngle(20, 0, 35, 2.5)
@@ -32,8 +32,9 @@ def M3 ():
     
     moveToDistance(10, -60, -45, 2.5)
     turnToAngle(0, -20, 29, 2.5)
-    moveToDistance(75, -80, 20, 2.5) 
-
+    moveToDistance(75, -78, 20, 2.5) 
+   
+    print("M3 - Tempo impiegato: ")
     print(float(stopwatch.time())/1000, " secondi")
   
 

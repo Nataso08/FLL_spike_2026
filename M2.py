@@ -37,6 +37,7 @@ def M2 ():
     moveToDistance(60, 90, 0, 2.5, False)
     moveToDistance(45, 80, -30, 2.5)
 
+    print("M2 - Tempo impiegato: ")
     print(float(stopwatch.time())/1000, " secondi")
 
 M2 ()
