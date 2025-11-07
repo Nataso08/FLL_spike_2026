@@ -25,7 +25,7 @@ def M1 ():
 
     turnToAngle(0, 25, -80, 2.5)
 
-    moveToDistance(11, 40, -80, 2.5)
+    moveToDistance(10, 40, -80, 2.5)
 
     wait(100)
     moveToDistance(18, -40, -55, 2.5)
@@ -37,9 +37,9 @@ def M1 ():
 
     motorTopR.run_angle(-400, -200)
 
-    waitPress()
+    moveToDistance(4, 40, -90, 2.5)
 
-    moveToDistance(4, -40, -90, 2.5)
+    moveToDistance(8, -40, -90, 2.5)
     turnToAngle(8, -30, -5, 2.5)
 
 
