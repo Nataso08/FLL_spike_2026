@@ -8,17 +8,6 @@ hub = PrimeHub()
 print("Batteria: ", hub.battery.voltage() / 1000, " V")      # comando per ottenere tensione della batteria (ottimale sopra 8 V)
 
 # se si vuole svolgere una precisa missione utilizzare la seguente sintassi,
+# M1 ()
 # togliendo il nome della missione dal commento e verificare corretta identazione (no spazio a sx)
 
-motorTopL.run_angle(1000, -150)
-wait(100)
-motorTopL.run_angle(1000, 150)
-wait(100)
-motorTopL.run_angle(1000, -150)
-wait(100)
-motorTopL.run_angle(1000, 150)
-wait(100)
-motorTopL.run_angle(1000, -150)
-wait(100)
-motorTopL.run_angle(1000, 150)
-#motorTopR.run_angle(1000, -7000)
