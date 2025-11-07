@@ -28,15 +28,15 @@ def M2 ():
     # allineamento anello
     moveToDistance(9, 50, -90, 2.5)
 
-    # tira anello
+    # tira anel
     motorTopL.run_target(1000, -120)
     motorTopL.run(-100)
-    moveToDistance(2, 35, -90, 2.5)
+    moveToDistance(2, 25, -90, 2.5)
     motorTopL.brake()
     turnToAngle(35, 0, 0, 2.5)
-    moveToDistance(60, 90, 0, 2.5, False)
-    moveToDistance(45, 80, -30, 2.5)
-
+    moveToDistance(60, 80, 0, 2.5, False)
+    moveToDistance(45, 100, -30, 2.5)
+    moveToDistance()
     print("M2 - Tempo impiegato: ")
     print(float(stopwatch.time())/1000, " secondi")
 

@@ -14,24 +14,33 @@ def M1 ():
     print(hub.battery.voltage())
 
     moveToDistance(46, 50, 0, 2.5)
-    for i in range(3):
-        motorTopL.run_angle(1000, -150)  #fa uscire i tre smonchi cosi
-        motorTopL.run_angle(1000, 200)
-        wait(200)
-    
-    moveToDistance(3, 50, 0 ,2.5, False)
-    motorTopL.run_angle(1000, -50)
-    moveToDistance(13, 50, 0, 2.5)
-    turnToAngle
+
+    for i in range(4):
+            motorTopL.run_target(1000, -400)
+            motorTopL.run_target(1000, 150)
+    wait(200)
     
 
-    
-    
-    # motorTopR.run_target(1000, 400, Stop.HOLD, False)
-    # moveToDistance(12, 40, 0, 2.5)
+    moveToDistance(28, 50, 0, 2.5)
 
-    # motorTopR.run_angle(1000, 3000)
+    turnToAngle(0, 25, -80, 2.5)
 
+    moveToDistance(11, 40, -80, 2.5)
+
+    wait(100)
+    moveToDistance(18, -40, -55, 2.5)
+
+    motorTopR.run_angle(-400, 700, Stop.HOLD, False)
+    
+    turnToAngle(-25, 0, -100, 2.5)
+    moveToDistance(26, -40, -100, 2.5)
+
+    motorTopR.run_angle(-400, -200)
+
+    waitPress()
+
+    moveToDistance(4, -40, -90, 2.5)
+    turnToAngle(8, -30, -5, 2.5)
 
 
     print(float(stopwatch.time())/1000, " secondi")
