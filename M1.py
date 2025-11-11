@@ -9,6 +9,8 @@ def M1 ():
     #motorTopR.run_angle(1000, 1200, Stop.HOLD, False) 
     
     resetImu()
+    motorTopL.reset_angle()
+    motorTopR.reset_angle()
 
     print(hub.battery.voltage())
 
@@ -25,46 +27,22 @@ def M1 ():
 
     turnToAngle(0, 20, -90, 2.5)                        # rotazione -> missione macigni
 
-    #moveToDistance(10, 40, -80, 2.5)                    # avanzamento -> missione piatto
+    turnToAngle(20, 0, -65, 2.5)
+    motorTopR.run_target(800, -300, Stop.HOLD, False)
+    moveToDistance(15, -40, -65, 2.5)
+    turnToAngle(-20, 0, -80, 2.5)
 
-
-    turnToAngle(20,0,-65,2.5)
-    motorTopR.run_angle(-800, 300)
-    moveToDistance(15,-40,-65,2.5)
-    turnToAngle(-20,0,-80,2.5)
-
-    moveToDistance(16,-45,-100,2.5)
-    motorTopR.run_angle(-400, 380)
-    moveToDistance(13,-45,-100,2.5)
-    moveToDistance(5,45,-90,2.5)
-
-
-
-
-
-    #wait(100)
-    #moveToDistance(18, -40, -55, 2.5)                   # arretramento
-
-    #waitPress()
-    # motorTopR.run_angle(-400, 700, Stop.HOLD, False)    # abbassamento braccio per raccolta peso
+    moveToDistance(16, -45, -100, 2.5)
     
-    # waitPress()
-    # turnToAngle(-25, 0, -100, 2.5)                      # allineamento
-    # waitPress()
-    # moveToDistance(26, -40, -100, 2.5)                  # arretramento
+    motorTopR.run_target(400, -630)
+    
+    moveToDistance(13, -80, -100, 2.5)
 
-    # waitPress()
-    # motorTopR.run_angle(-400, -200)                     # sollevamento braccio per raccolta peso
+    moveToDistance(5, 60, -90, 2.5) 
 
-    # waitPress()
-    # moveToDistance(4, 40, -90, 2.5)                     # avanzamento breve -> si spostano pietre
-    # waitPress()
-   
-   
-    # moveToDistance(8, -40, -90, 2.5)                    # arretramento verso base
-    # waitPress()
-    # turnToAngle(8, -30, -5, 2.5)                        # rotazione -> ingresso in base
+
 
     print("M1 - Tempo impiegato: ", float(stopwatch.time())/1000, " secondi")
 
 M1 ()
+# 19.2 sec

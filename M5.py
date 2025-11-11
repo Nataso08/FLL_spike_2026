@@ -33,5 +33,5 @@ def M5 ():
 
     print("M5 - Tempo impiegato: ", float(stopwatch.time())/1000, " secondi")
 
-M5()
+# M5()
 #tempo = 20sec   
