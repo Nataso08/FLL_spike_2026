@@ -8,6 +8,7 @@ hub = PrimeHub()
 print("Batteria: ", hub.battery.voltage() / 1000, " V")      # comando per ottenere tensione della batteria (ottimale sopra 8 V)
 
 # se si vuole svolgere una precisa missione utilizzare la seguente sintassi,
+# M1 ()
 # togliendo il nome della missione dal commento e verificare corretta identazione (no spazio a sx)
 
 #Struttura m1 campo 2024/2025 che si muove - utile per open day 2025

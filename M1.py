@@ -9,40 +9,37 @@ def M1 ():
     #motorTopR.run_angle(1000, 1200, Stop.HOLD, False) 
     
     resetImu()
-    # calibImu(2)
 
     print(hub.battery.voltage())
 
-    moveToDistance(46, 50, 0, 2.5)
+    moveToDistance(46, 50, 0, 2.5)                      # avanzamento fino a montagna
 
-    for i in range(4):
+    for i in range(4):                                  # batte forte 4 volte
             motorTopL.run_target(1000, -400)
             motorTopL.run_target(1000, 150)
     wait(200)
-    
 
-    moveToDistance(28, 50, 0, 2.5)
+    moveToDistance(28, 50, 0, 2.5)                      # avanzamento
 
-    turnToAngle(0, 25, -80, 2.5)
+    turnToAngle(0, 25, -80, 2.5)                        # rotazione -> missione macigni
 
-    moveToDistance(11, 40, -80, 2.5)
+    moveToDistance(10, 40, -80, 2.5)                    # avanzamento -> missione piatto
 
     wait(100)
-    moveToDistance(18, -40, -55, 2.5)
+    moveToDistance(18, -40, -55, 2.5)                   # arretramento
 
-    motorTopR.run_angle(-400, 700, Stop.HOLD, False)
+    motorTopR.run_angle(-400, 700, Stop.HOLD, False)    # abbassamento braccio per raccolta peso
     
-    turnToAngle(-25, 0, -100, 2.5)
-    moveToDistance(26, -40, -100, 2.5)
+    turnToAngle(-25, 0, -100, 2.5)                      # allineamento
+    moveToDistance(26, -40, -100, 2.5)                  # arretramento
 
-    motorTopR.run_angle(-400, -200)
+    motorTopR.run_angle(-400, -200)                     # sollevamento braccio per raccolta peso
 
-    waitPress()
+    moveToDistance(4, 40, -90, 2.5)                     # avanzamento breve -> si spostano pietre
 
-    moveToDistance(4, -40, -90, 2.5)
-    turnToAngle(8, -30, -5, 2.5)
+    moveToDistance(8, -40, -90, 2.5)                    # arretramento verso base
+    turnToAngle(8, -30, -5, 2.5)                        # rotazione -> ingresso in base
 
+    print("M1 - Tempo impiegato: ", float(stopwatch.time())/1000, " secondi")
 
-    print(float(stopwatch.time())/1000, " secondi")
-
-M1()
+M1 ()
