@@ -23,7 +23,7 @@ def M3 ():
     turnToAngle(20, 0, 35, 2.5)                         # rotazione
 
     moveToDistance(10, 40, 35, 2.5)                     # avanzamento -> allineamento con missione 
-    turnToAngle(0, 15, -45, 2.5)                        # rotazione verso missione
+    turnToAngle(0, 15, -45, 2.5)                        # rotazione verso missione parco spacciatori
 
     motorTopR.run_target(1100, 340)                     # abbassamento cremagliera
     moveToDistance(9, 35, -40, 2.5)                     # ingroppamento missione
