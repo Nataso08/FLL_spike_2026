@@ -10,15 +10,14 @@ print("Batteria: ", hub.battery.voltage() / 1000, " V")      # comando per otten
 # se si vuole svolgere una precisa missione utilizzare la seguente sintassi,
 # togliendo il nome della missione dal commento e verificare corretta identazione (no spazio a sx)
 
-motorTopL.run_angle(1000, -150)
+#Struttura m1 campo 2024/2025 che si muove - utile per open day 2025
+motorTopL.run_angle(3000, -400)
 wait(100)
-motorTopL.run_angle(1000, 150)
+motorTopR.run_angle(1000, -800)
+wait(1300)
+motorTopR.run_angle(1000, 800)
 wait(100)
-motorTopL.run_angle(1000, -150)
+motorTopL.run_angle(3000, 400)
 wait(100)
-motorTopL.run_angle(1000, 150)
-wait(100)
-motorTopL.run_angle(1000, -150)
-wait(100)
-motorTopL.run_angle(1000, 150)
+
 #motorTopR.run_angle(1000, -7000)
