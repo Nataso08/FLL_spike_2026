@@ -26,7 +26,7 @@ def M3 ():
     turnToAngle(0, 15, -45, 2.5)                        # rotazione verso missione parco spacciatori
 
     motorTopR.run_target(1100, 340)                     # abbassamento cremagliera
-    moveToDistance(9, 35, -40, 2.5)                     # ingroppamento missione
+    moveToDistance(9, 43, -40, 2.5)                     # ingroppamento missione
     motorTopR.run_target(1000, 1200)                    # sollevamento cremagliera -> raccolta pezzo
     
     moveToDistance(10, -60, -45, 2.5)                   # breve arretramento
@@ -35,5 +35,5 @@ def M3 ():
    
     print("M3 - Tempo impiegato: ", float(stopwatch.time())/1000, " secondi")
 
-# M3 ()
+M3 ()
 #tempo = 18sec

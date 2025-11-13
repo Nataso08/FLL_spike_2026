@@ -22,3 +22,6 @@ motorTopL.run_angle(3000, 400)
 wait(100)
 
 #motorTopR.run_angle(1000, -7000)
+
+
+# RACCOLTA PESCI E OGGETTI VARI PER IL CAMPO + BOA, PESO MORTO E PINO IL SOMMOZZATORE

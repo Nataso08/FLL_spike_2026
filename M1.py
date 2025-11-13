@@ -16,27 +16,30 @@ def M1 ():
 
     moveToDistance(46, 50, 0, 2.5)                      # avanzamento fino a montagna
 
-    for i in range(3):                                  # batte forte 4 volte
+    for i in range(3):                                  # batte forte 3 volte
             motorTopL.run_target(1000, -400)
             motorTopL.run_target(1000, 150)
     wait(200)
 
 
-    moveToDistance(28, 55, 0, 2.5)                      # avanzamento
+    moveToDistance(27, 55, 0, 2.5)                      # avanzamento
 
 
     turnToAngle(0, 20, -90, 2.5)                        # rotazione -> missione macigni
 
-    turnToAngle(20, 0, -65, 2.5)
-    motorTopR.run_target(800, -300, Stop.HOLD, False)
-    moveToDistance(15, -40, -65, 2.5)
+    turnToAngle(20, 0, -65, 2.5)                        # girazione verso 
+    motorTopR.run_angle(1000,-500)
+
+    moveToDistance(13, -40, -65, 2.5)
     turnToAngle(-20, 0, -80, 2.5)
 
-    moveToDistance(16, -45, -100, 2.5)
+    moveToDistance(16, -45, -100, 2.5)                  #avvicinamento coso rotondo
     
-    motorTopR.run_target(400, -630)
-    
-    moveToDistance(13, -80, -100, 2.5)
+    motorTopR.run_angle(1000, -180)                     #movimento braccio forcato
+
+    moveToDistance(13, -80, -100, 2.5)                  #aggancio coso rotondo
+
+    motorTopR.run_angle(400, 400)                      #alzo il braccio
 
     moveToDistance(5, 60, -90, 2.5) 
 

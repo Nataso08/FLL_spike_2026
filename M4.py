@@ -19,5 +19,5 @@ def M4 ():
 
     print("M4 - Tempo impiegato: ", float(stopwatch.time())/1000, " secondi")
 
-# M4 ()
+M4 ()
 #tempo = 6sec
